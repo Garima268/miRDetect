@@ -16,7 +16,6 @@ NumPy if needed), upgrade or uninstall with just one terminal command::
 
     pip install biopython
     pip install --upgrade biopython
-    pip uninstall biopython
 
 Building local server
 git clone https://github.com/Garima268/miRMaster.git
