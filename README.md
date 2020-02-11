@@ -9,6 +9,7 @@ Dependencies required to run miRMaster:
 -ViennaRNA Package 
 -Biopython
 -scikit-learn
+-pandas
 
 Python 2.7.9 onwards, and Python 3.4 onwards, include the package management
 system "pip" which should allow you to install Biopython (and its dependency
