@@ -23,6 +23,7 @@ For installing scikit-learn modules type
 Building local server
 git clone https://github.com/Garima268/miRMaster.git
 cd miRMaster
+python install.py
 
 Once the dependencies are installed please enter the absolute paths of all the above in the config.py 
 For example
