@@ -31,11 +31,10 @@ For example
   #Enter full path to ViennaRNA package directory
   path_vienna = "/usr/bin/ViennaRNA-2.4.14/"
   #Enter full path to Uniprot/nr database directory
-  path_db = "/home/User/miRMaster/"
+  path_db = "/home/User/miRMaster/DB"
   #Enter name of Database fasta file
   db_name = "uniprot_sprot.fasta"
-  #Enter path to miRMaster directory
-  path_tool = "/home/User/miRMaster/"
+  
 
 
 Usage:
