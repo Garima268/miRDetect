@@ -12,7 +12,7 @@ Dependencies required to run miRDetect:
 
 
 Building local server
-git clone https://github.com/Garima268/miRMaster.git
+git clone https://github.com/Garima268/miRDetect.git
 cd miRDetect
 python install.py
 Download uniprot_sprot fasta from https://www.uniprot.org/downloads and place the file in DB folder
