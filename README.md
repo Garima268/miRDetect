@@ -24,7 +24,7 @@ For example
   #Enter full path to ViennaRNA package directory
   path_vienna = "/usr/bin/ViennaRNA-2.4.14/"
   #Enter full path to Uniprot/nr database directory
-  path_db = "/home/User/miRMaster/DB"
+  path_db = "/home/User/miRDetect/DB"
   #Enter name of Database fasta file
   db_name = "uniprot_sprot.fasta"
   
