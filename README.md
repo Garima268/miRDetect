@@ -31,5 +31,5 @@ For example
 
 
 Usage:
-python miRDetect.py <EST.fasta></pre>
+python miRDetect.py ESTfastafile </pre>
 
