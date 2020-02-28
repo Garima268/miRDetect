@@ -2,7 +2,7 @@ import os
 import sys
 import Bio
 from Bio import SeqIO
-from config import path_db, path_blast
+from config import path_db, path_blast, p_name
 from shutil import copy
 import subprocess
 from Bio import SearchIO
@@ -101,7 +101,7 @@ test2 = os.path.exists(my_file2)
 if test2 == False:
     print("*********Creating Databases*************")
     os.chdir(path_blast)
-    prot_db = os.path.join(path_db, "uniprot_sprot.fasta")
+    prot_db = os.path.join(path_db, p_name)
     path_uniprot = os.path.join(path_db, "uniprot")
     make_db = subprocess.run(["./makeblastdb", "-in", prot_db,"-dbtype", "prot" , "-parse_seqids",  "-out", path_uniprot])
 else:
