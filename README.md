@@ -27,7 +27,7 @@ For example
   #Enter full path to Uniprot/nr database directory
   path_db = "/home/User/miRDetect/DB"
   #Enter name of Database fasta file
-  db_name = "uniprot_sprot.fasta"
+  p_name = "uniprot_sprot.fasta"
   
 
 
