@@ -7,5 +7,5 @@ path_vienna = "/home/User/Projects/ViennaRNA-2.4.14"
 #Enter full path to Uniprot/nr database directory
 path_db = "/home/User/miRMaster/DB/"
 #Enter name of Uniprot fasta 
-db_name = "uniprot"
+p_name = "uniprot_sprot.fasta"
 
