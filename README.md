@@ -31,5 +31,9 @@ For example
 
 
 Usage:
-python miRDetect.py ESTfastafile </pre>
+python miRDetect.py [options] ESTfastafile 
+Options:
+-p Specify Number of threads to be used for Blast 
+
+</pre>
 
