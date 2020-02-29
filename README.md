@@ -34,7 +34,7 @@ For example
 Usage:
 python miRDetect.py [options] ESTfastafile 
 Options:
--p <int> Specify Number of threads to be used for Blast 
+-p int Specify Number of threads to be used for Blast 
 
 </pre>
 
