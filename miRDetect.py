@@ -10,7 +10,7 @@ from pyfasta import Fasta
 from optparse import OptionParser
 
 parser = OptionParser()
-parser.add_option("-p",  action="store", dest="num", type="int", default=1, help='Input number of CPUs')
+parser.add_option("-p", action="store", dest="num", type="int", default=1, help='Input number of CPUs')
 options, args = parser.parse_args()
 p  = str(options.num)
 path_tool = os.getcwd()
