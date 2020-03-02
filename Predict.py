@@ -27,7 +27,7 @@ def predictseq(feature_file):
             Pred_pos+=1
         else:
             Pred_neg+=1
-    print(Pred_pos)   
+    print("Novel Precursors found:",Pred_pos)   
     with open("novel-microrna.csv", "w") as f:
         writer = csv.writer(f)
         for row in rows:
