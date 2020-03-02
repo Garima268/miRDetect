@@ -10,9 +10,9 @@ from pyfasta import Fasta
 from optparse import OptionParser
 
 parser = OptionParser()
-parser.add_option("-p", "--num_threads", action="store", dest="c", type="int", default=1)
+parser.add_option("-p",  action="store", dest="num", type="int", default=1, help='Input number of CPUs')
 options, args = parser.parse_args()
-p  = str(options.c)
+p  = str(options.num)
 path_tool = os.getcwd()
 print("*********Beginning miRNA Search from Data*************")
 if (int(p)>1):
