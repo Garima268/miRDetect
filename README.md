@@ -30,6 +30,7 @@ For example
   p_name = "uniprot_sprot.fasta"
   
 
+Before running make sure that the input fasta file headers do not have spaces in them. Please remove spaces in headers from file
 
 Usage:
 python miRDetect.py [options] ESTfastafile 
