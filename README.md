@@ -3,7 +3,7 @@
 miRDetect is an open source python implementation made available under the GNU General Public License. It requires Python3 or above for smooth running. The software screens novel precursor sequences from EST datasets<br> of plants. There is a huge inflow of data in terms of genomics and molecular biology. There are several softwares for screening miRNA from small RNA-seq data. However, there is a scarcity of working softwares for screening miRNA from EST data. Moreover the ones available are mostly based on homology. Here, we present an ML-based system with Random Forest algorithm named miRDetect for the computational prediction of miRNA from plant EST datasets. 
 
 If you're using miRDetect please cite us:
-Ayachit, G., Pandya,H., Das, J. (2020).miRDetect: A combinatorial approach for automated detection of novel miRNA precursors from plant EST data using homology and Random Forest classification.Manuscript submitted for publication. Genomics. https://doi.org/10.1016/j.ygeno.2020.05.002
+Ayachit, G., Pandya,H., Das, J. (2020).miRDetect: A combinatorial approach for automated detection of novel miRNA precursors from plant EST data using homology and Random Forest classification.Article in press. Genomics. https://doi.org/10.1016/j.ygeno.2020.05.002
 
 System requirements:
 -Ubuntu (>=16.04)(The current version does not yet support other platforms or run via conda environment)
