@@ -1,26 +1,38 @@
 import importlib.util
-import os
-import sys
 import subprocess
+import sys
 
-package_name = 'pyfasta'
-ML_name = 'pandas'
 
-#Check whether Pyfasta is installed or not
-spec = importlib.util.find_spec(package_name)
-if spec is None:
-    print(package_name +" is not installed")
-    print("Installing" + package_name)
-    subprocess.run(["pip", "install", "pyfasta"])
-else:
-    print(package_name + " is installed")
-  
-#Check whether Sklearn is installed or not
-spec = importlib.util.find_spec(ML_name)
-if spec is None:
-    print(ML_name +" is not installed")
-    print("Installing" + ML_name)
-    subprocess.run(["pip", "install", "pandas"])
-else:
-    print(ML_name + " is installed")
-  
+def ensure_package(package_name, install_name=None):
+    """
+    Check if a package is installed; if not, install it.
+    
+    Args:
+        package_name (str): name used for import
+        install_name (str): name used for pip install (if different)
+    """
+    install_name = install_name or package_name
+
+    if importlib.util.find_spec(package_name) is None:
+        print(f"{package_name} is not installed. Installing...")
+        try:
+            subprocess.check_call([sys.executable, "-m", "pip", "install", install_name])
+            print(f"{install_name} installed successfully.")
+        except subprocess.CalledProcessError:
+            print(f"Failed to install {install_name}.")
+    else:
+        print(f"{package_name} is already installed.")
+
+
+def main():
+    packages = [
+        ("pyfasta", None),
+        ("pandas", None),
+    ]
+
+    for pkg, install_name in packages:
+        ensure_package(pkg, install_name)
+
+
+if __name__ == "__main__":
+    main()
